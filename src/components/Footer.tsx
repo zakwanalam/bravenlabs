@@ -1,3 +1,5 @@
+const WHATSAPP_URL = "https://wa.me/0000000000000?text=Hi%20Logexa%20Labs%2C%20I%27d%20like%20to%20ask%20a%20quick%20question.";
+
 const Footer = () => {
   return (
     <footer className="border-t border-border/30 py-12">
@@ -16,6 +18,7 @@ const Footer = () => {
             <a href="#automation" className="hover:text-foreground transition-colors">Automation</a>
             <a href="#packages" className="hover:text-foreground transition-colors">Packages</a>
             <a href="#faq" className="hover:text-foreground transition-colors">FAQ</a>
+            <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">WhatsApp</a>
             <a href="#cta" className="text-primary hover:text-primary/80 transition-colors">Book a Free Consultation</a>
           </div>
         </div>

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import AnimatedSection from "./AnimatedSection";
+
+const WHATSAPP_URL = "https://wa.me/0000000000000?text=Hi%20Logexa%20Labs%2C%20I%27d%20like%20to%20ask%20a%20quick%20question.";
 
 const CTASection = () => {
   const navigate = useNavigate();
@@ -37,9 +39,16 @@ const CTASection = () => {
           </div>
         </AnimatedSection>
         <AnimatedSection delay={0.3}>
-          <Button variant="hero" size="lg" className="text-base px-10 py-6" onClick={() => navigate("/booking")}>
-            Book Free Audit <ArrowRight size={18} />
-          </Button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Button variant="hero" size="lg" className="text-base px-10 py-6" onClick={() => navigate("/booking")}>
+              Book a Free Consultation <ArrowRight size={18} />
+            </Button>
+            <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
+              <Button variant="heroOutline" size="lg" className="text-base px-10 py-6">
+                Chat on WhatsApp <MessageCircle size={18} />
+              </Button>
+            </a>
+          </div>
         </AnimatedSection>
       </div>
     </section>
