@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const faqs = [
   {
     question: "Who is Logexa Labs best for?",
-    answer: "We are best suited for small businesses, service providers, local brands, clinics, consultants, agencies, and growing teams that need better websites, clearer funnels, or automation support.",
+    answer: "We are best suited for modern brands, service providers, global teams, clinics, consultants, agencies, and growing companies that need better websites, clearer funnels, or automation support.",
   },
   {
     question: "What happens in the free audit?",

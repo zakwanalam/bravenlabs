@@ -7,7 +7,7 @@ import HeroBackground from "./HeroBackground";
 const trustItems = [
   "Websites that convert",
   "AI automation that saves time",
-  "Built for small businesses",
+  "Built for modern brands",
 ];
 
 const HeroSection = () => {
@@ -24,7 +24,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="inline-block mb-6 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-xs font-medium text-primary tracking-wider uppercase"
         >
-          Websites & AI Automation for Small Businesses
+          Websites & AI Automation for Modern Brands
         </motion.div>
 
         <motion.h1
@@ -43,7 +43,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.55 }}
           className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
         >
-          Logexa Labs helps small businesses grow with conversion-focused websites, landing pages,
+          Logexa Labs helps modern brands grow with conversion-focused websites, landing pages,
           and AI-powered automation systems that reduce manual work and turn more visitors into enquiries.
         </motion.p>
 
@@ -72,6 +72,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.95 }}
           className="mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm text-muted-foreground"
         >
+          <span className="px-4 py-2 rounded-full border border-border/60 bg-background/40">Designed for modern brands</span>
           {trustItems.map((item) => (
             <div key={item} className="flex items-center gap-2 rounded-full border border-border/60 bg-background/30 px-4 py-2 backdrop-blur-sm">
               <CheckCircle2 size={16} className="text-primary" />

@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="font-display text-lg font-bold">
               <span className="text-primary">Logexa</span> Labs
             </div>
-            <p className="text-sm text-muted-foreground mt-2">Websites and AI automation for small businesses that want more leads and less chaos.</p>
+            <p className="text-sm text-muted-foreground mt-2">Websites and AI automation for modern brands and enterprises that want more leads and less chaos.</p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">

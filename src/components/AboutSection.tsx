@@ -2,7 +2,7 @@ import AnimatedSection from "./AnimatedSection";
 
 const trustPoints = [
   "Clear communication and practical recommendations",
-  "Built for small businesses that need results, not fluff",
+  "Built for modern brands that need results, not fluff",
   "Strong focus on conversion, usability, and speed",
   "Web, funnel, and automation thinking under one roof",
 ];

@@ -37,7 +37,7 @@ const INDUSTRY_OPTIONS = [
   "Real Estate",
   "Technology",
   "Agency / Services",
-  "Local Business",
+  "Enterprise / Organization",
   "Other",
 ];
 
@@ -166,7 +166,7 @@ const Booking = () => {
                     <div><Label htmlFor="name">Full Name *</Label><Input id="name" placeholder="John Doe" value={data.name} onChange={(e) => update("name", e.target.value)} className="mt-1.5 bg-background/50" /></div>
                     <div><Label htmlFor="email">Email Address *</Label><Input id="email" type="email" placeholder="john@company.com" value={data.email} onChange={(e) => update("email", e.target.value)} className="mt-1.5 bg-background/50" /></div>
                     <div><Label htmlFor="phone">Whatsapp / Phone Number *</Label><Input id="phone" type="tel" placeholder="03001234567" value={data.phone} onChange={(e) => update("phone", e.target.value)} className="mt-1.5 bg-background/50" /></div>
-                    <div><Label htmlFor="company">Business Name</Label><Input id="company" placeholder="Your business name (optional)" value={data.company} onChange={(e) => update("company", e.target.value)} className="mt-1.5 bg-background/50" /></div>
+                    <div><Label htmlFor="company">Company / Brand Name</Label><Input id="company" placeholder="Your company or brand name (optional)" value={data.company} onChange={(e) => update("company", e.target.value)} className="mt-1.5 bg-background/50" /></div>
                   </div>
                 </motion.div>
               )}

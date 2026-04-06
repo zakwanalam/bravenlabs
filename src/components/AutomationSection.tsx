@@ -115,13 +115,13 @@ const AutomationSection = () => {
       <div className="container mx-auto px-6">
         <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
           <p className="text-sm font-medium text-accent uppercase tracking-widest mb-3">AI & Automation</p>
-          <h2 className="font-display text-4xl sm:text-5xl font-bold mb-6">Automate the Work That Slows Your Business Down</h2>
+          <h2 className="font-display text-4xl sm:text-5xl font-bold mb-6">Automate the Work That Slows Your Growth Down</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8 text-lg leading-relaxed">
             We use tools like <span className="text-primary font-semibold">n8n</span>, <span className="text-primary font-semibold">AI</span>, and your existing apps to automate lead follow-up, booking, reminders, and repetitive internal workflows.
           </p>
           <Link to="/booking">
             <Button size="lg" className="rounded-full px-8 shadow-lg text-md shadow-primary/20 hover:shadow-primary/30 transition-all duration-300">
-              AI Automate My Business
+              AI Automate My Operations
             </Button>
           </Link>
         </AnimatedSection>
