@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import { Heart, HeartPulse, HeartPulseIcon, LucideHeartPulse } from "lucide-react";
 import f3Logo from "../assets/F3/f3_logo.png";
 import vitcareLogo from "../assets/Vitcare/vitcare_logo.png";
+import cclogo from "../assets/CClogo/cremecottagelogo2.png";
 
 const logos: { name: string; image: string; typographic?: boolean; vitcare?: boolean }[] = [
   { name: "F3 Real Estate", image: f3Logo },
   { name: "Vital Care", image: vitcareLogo, vitcare: true },
   // { name: "Bravo Gym", image: "" },
-  { name: "Creme Cottage", image: "/src/assets/CClogo/cremecottagelogo2.png" },
+  { name: "Creme Cottage", image: cclogo },
   { name: "AETHER", image: "", typographic: true },
 ];
 
