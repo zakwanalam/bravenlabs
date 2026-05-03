@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "Who is Logexa Labs best for?",
+    question: "Who is Braven Labs best for?",
     answer: "We are best suited for modern brands, service providers, global teams, clinics, consultants, agencies, and growing companies that need better websites, clearer funnels, or automation support.",
   },
   {
@@ -26,7 +26,7 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="py-28 relative">
+    <section id="faq" className="py-16 relative">
       <div className="container mx-auto px-6 max-w-4xl">
         <AnimatedSection className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-widest mb-3">FAQ</p>

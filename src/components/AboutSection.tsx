@@ -12,13 +12,12 @@ const AboutSection = () => {
     <section id="about" className="py-28 relative">
       <div className="container mx-auto px-6 max-w-5xl text-center">
         <AnimatedSection>
-          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-3">Why Logexa Labs</p>
+          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-3">Why Braven Labs</p>
           <h2 className="font-display text-4xl sm:text-5xl font-bold mb-8">Built for Businesses That Want Better Systems</h2>
-        </AnimatedSection>
-        <AnimatedSection delay={0.15}>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-3xl mx-auto">
-            Logexa Labs helps businesses improve how they show up online and how they operate behind the scenes.
-            That means clearer websites, stronger conversion paths, and automation that removes repetitive manual work.
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">About Braven Labs</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
+            Braven Labs is a boutique digital agency at the intersection of high-end design and intelligent automation. 
+            We help forward-thinking companies scale by building websites and systems that feel as innovative as their products.
           </p>
         </AnimatedSection>
 

@@ -10,7 +10,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section id="process" className="py-28 relative">
+    <section id="process" className="py-16 relative">
       <div className="container mx-auto px-6">
         <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
           <p className="text-sm font-medium text-primary uppercase tracking-widest mb-3">How We Work</p>

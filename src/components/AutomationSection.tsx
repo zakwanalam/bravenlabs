@@ -5,7 +5,7 @@ import { AnimatedBeam } from "@/components/ui/animated-beam";
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 import DotPattern from "@/components/ui/dot-pattern";
-
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -32,14 +32,15 @@ const Icons = {
   n8n: () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlSpace="preserve"
       viewBox="0 121.3 512.1 269.6"
       width="40"
       height="40"
     >
       <path
-        d="M458.1 229.1c-25.1 0-46.2-17.2-52.2-40.4h-61.8c-13.2 0-24.4 9.5-26.6 22.5l-2.2 13.3c-2 12.2-8.2 23.4-17.5 31.6 9.3 8.2 15.5 19.3 17.5 31.6l2.2 13.3c2.2 13 13.4 22.5 26.6 22.5h7.9c6-23.2 27.1-40.4 52.2-40.4 29.8 0 53.9 24.1 53.9 53.9s-24.1 53.9-53.9 53.9c-25.1 0-46.2-17.2-52.2-40.4h-7.9c-26.3 0-48.8-19-53.2-45l-2.2-13.3c-2.2-13-13.4-22.5-26.6-22.5h-21.4c-6 23.2-27.1 40.4-52.2 40.4s-46.2-17.2-52.2-40.4H106c-6 23.2-27.1 40.4-52.2 40.4C24.1 309.9 0 285.8 0 256s24.1-53.9 53.9-53.9c25.1 0 46.2 17.2 52.2 40.4h30.3c6-23.2 27.1-40.4 52.2-40.4s46.2 17.2 52.2 40.4h21.4c13.2 0 24.4-9.5 26.6-22.5l2.2-13.3c4.3-26 26.8-45 53.2-45H406c6-23.2 27.1-40.4 52.2-40.4 29.8 0 53.9 24.1 53.9 53.9s-24.2 53.9-54 53.9m0-27c14.9 0 26.9-12.1 26.9-26.9s-12.1-26.9-26.9-26.9-26.9 12.1-26.9 26.9 12 26.9 26.9 26.9M53.9 282.9c14.9 0 26.9-12.1 26.9-26.9s-12.1-26.9-26.9-26.9-27 12-27 26.9 12.1 26.9 27 26.9M215.6 256c0 14.9-12.1 26.9-26.9 26.9s-26.9-12.1-26.9-26.9 12.1-26.9 26.9-26.9 26.9 12 26.9 26.9m215.6 80.8c0 14.9-12.1 26.9-26.9 26.9-14.9 0-26.9-12.1-26.9-26.9s12.1-26.9 26.9-26.9 26.9 12.1 26.9 26.9"
-        style={{ fillRule: "evenodd", clipRule: "evenodd", fill: "white" }}
+        d="M458.1 229.1c-25.1 0-46.2-17.2-52.2-40.4h-61.8c-13.2 0-24.4 9.5-26.6 22.5l-2.2 13.3c-2 12.2-8.2 23.4-17.5 31.6 9.3 8.2 15.5 19.3 17.5 31.6l2.2 13.3c2.2 13 13.4 22.5 26.6 22.5h7.9c6-23.2 27.1-40.4 52.2-40.4 29.8 0 53.9 24.1 53.9 53.9s-24.1 53.9-53.9 53.9c-25.1 0-46.2-17.2-52.2-40.4h-7.9c-26.3 0-48.8-19-53.2-45l-2.2-13.3c-2.2-13-13.4-22.5-26.6-22.5h-21.4c-6 23.2-27.1 40.4-52.2 40.4s-46.2-17.2-52.2-40.4H106c-6 23.2-27.1 40.4-52.2 40.4C24.1 309.9 0 285.8 0 256s24.1-53.9 53.9-53.9c25.1 0 46.2 17.2 52.2 40.4h30.3c6-23.2 27.1-40.4 52.2-40.4s46.2 17.2 52.2 40.4h21.4c13.2 0 24.4-9.5 26.6-22.5l2.2-13.3c4.3-26 26.8-45 53.2-45H406c6-23.2 27.1-40.4 52.2-40.4 29.8 0 53.9 24.1 53.9 53.9s-24.2 53.9-54 53.9m0-27c14.9 0 26.9-12.1 26.9-26.9s-12.1-26.9-26.9-26.9-26.9 12.1-26.9 26.9-12 26.9 26.9 26.9M53.9 282.9c14.9 0 26.9-12.1 26.9-26.9s-12.1-26.9-26.9-26.9-27 12-27 26.9 12.1 26.9 27 26.9M215.6 256c0 14.9-12.1 26.9-26.9 26.9s-26.9-12.1-26.9-26.9 12.1-26.9 26.9-26.9 26.9 12 26.9 26.9m215.6 80.8c0 14.9-12.1 26.9-26.9 26.9-14.9 0-26.9-12.1-26.9-26.9s12.1-26.9 26.9-26.9 26.9 12.1 26.9 26.9"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        fill="white"
       />
     </svg>
   ),
@@ -65,8 +66,12 @@ const Icons = {
     </svg>
   ),
   whatsapp: () => (
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-      <path fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24	c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path><path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path><path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3	l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path><path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8l6-1.6l0.6,0.3	c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path><path fill="#fff" fillRule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4	s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6	s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4	c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8	C20.6,19.3,19.7,17,19.3,16z" clipRule="evenodd"></path>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+      <path fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z" />
+      <path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3L5,43.8C5,43.8,4.9,43.8,4.9,43.8z" />
+      <path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z" />
+      <path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z" />
+      <path fill="#fff" fillRule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z" clipRule="evenodd" />
     </svg>
   ),
   googleDocs: () => (
@@ -76,23 +81,45 @@ const Icons = {
     </svg>
   ),
   zapier: () => (
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-      <rect width="16" height="16" x="12" y="16" fill="#fff" transform="rotate(-90 20 24)"></rect><polygon fill="#1e88e5" points="3,17 3,31 8,32 13,31 13,17 8,16"></polygon><path fill="#4caf50" d="M37,24v14c0,1.657-1.343,3-3,3H13l-1-5l1-5h14v-7l5-1L37,24z"></path><path fill="#fbc02d" d="M37,10v14H27v-7H13l-1-5l1-5h21C35.657,7,37,8.343,37,10z"></path><path fill="#1565c0" d="M13,31v10H6c-1.657,0-3-1.343-3-3v-7H13z"></path><polygon fill="#e53935" points="13,7 13,17 3,17"></polygon><polygon fill="#2e7d32" points="38,24 37,32.45 27,24 37,15.55"></polygon><path fill="#4caf50" d="M46,10.11v27.78c0,0.84-0.98,1.31-1.63,0.78L37,32.45v-16.9l7.37-6.22C45.02,8.8,46,9.27,46,10.11z"></path>
+    <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <rect width="16" height="16" x="12" y="16" fill="#fff" transform="rotate(-90 20 24)" />
+      <polygon fill="#1e88e5" points="3,17 3,31 8,32 13,31 13,17 8,16" />
+      <path fill="#4caf50" d="M37,24v14c0,1.657-1.343,3-3,3H13l-1-5l1-5h14v-7l5-1L37,24z" />
+      <path fill="#fbc02d" d="M37,10v14H27v-7H13l-1-5l1-5h21C35.657,7,37,8.343,37,10z" />
+      <path fill="#1565c0" d="M13,31v10H6c-1.657,0-3-1.343-3-3v-7H13z" />
+      <polygon fill="#e53935" points="13,7 13,17 3,17" />
+      <polygon fill="#2e7d32" points="38,24 37,32.45 27,24 37,15.55" />
+      <path fill="#4caf50" d="M46,10.11v27.78c0,0.84-0.98,1.31-1.63,0.78L37,32.45v-16.9l7.37-6.22C45.02,8.8,46,9.27,46,10.11z" />
     </svg>
   ),
   slack: () => (
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-      <path fill="#FFB300" d="M31.2,10.6l-6.6,2.3l-1.4-4.3c-0.6-1.8,0.3-3.8,2.2-4.4c1.8-0.6,3.8,0.3,4.4,2.2L31.2,10.6z M29.2,26.6l6.6-2.3l-2.3-7.1l-6.6,2.3L29.2,26.6z M32.6,36.8c0.5,1.4,1.9,2.4,3.3,2.4c0.4,0,0.8-0.1,1.1-0.2c1.8-0.6,2.8-2.6,2.2-4.4L38,31l-6.6,2.3L32.6,36.8z"></path><path fill="#00BFA5" d="M17.2,15.5l-6.6,2.3l-1.4-4.2c-0.6-1.8,0.3-3.8,2.2-4.4c1.8-0.6,3.8,0.3,4.4,2.2L17.2,15.5z M18.6,41.8c0.5,1.4,1.9,2.4,3.3,2.4c0.4,0,0.8-0.1,1.1-0.2c1.8-0.6,2.8-2.6,2.2-4.4l-1.2-3.7l-6.6,2.3L18.6,41.8z M19.4,22.2l-6.6,2.3l2.3,7.1l6.6-2.3L19.4,22.2z"></path><path fill="#00BCD4" d="M33.4,17.3l-2.2-6.6l4.1-1.4c1.8-0.6,3.8,0.3,4.4,2.2c0.6,1.8-0.3,3.8-2.2,4.4L33.4,17.3z M26.8,19.6l-2.2-6.6l-7.4,2.6l2.2,6.6L26.8,19.6z M6.4,19.3c-1.8,0.6-2.8,2.6-2.2,4.4c0.5,1.5,1.9,2.4,3.3,2.4c0.4,0,0.8-0.1,1.1-0.2l4.1-1.4l-2.2-6.6L6.4,19.3z"></path><path fill="#E91E63" d="M15.1,31.5l2.2,6.6l-4.7,1.6c-0.4,0.1-0.8,0.2-1.1,0.2c-1.5,0-2.8-0.9-3.3-2.4c-0.6-1.8,0.3-3.8,2.2-4.4L15.1,31.5z M43.7,25.3c-0.6-1.8-2.6-2.8-4.4-2.2l-3.5,1.2L38,31l3.6-1.2C43.4,29.1,44.4,27.1,43.7,25.3z M21.7,29.2l2.2,6.6l7.4-2.6l-2.2-6.6L21.7,29.2z"></path><path fill="#388E3C" d="M33.4 17.3L31.2 10.6 24.6 12.9 26.8 19.6z"></path><path fill="#00897B" d="M17.2 15.5L10.6 17.8 12.8 24.5 19.4 22.2z"></path><path fill="#BF360C" d="M29.2 26.6L31.4 33.3 38 31 35.8 24.3z"></path><path fill="#4E342E" d="M15.1 31.5L17.3 38.2 23.9 35.9 21.7 29.2z"></path>
+    <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#FFB300" d="M31.2,10.6l-6.6,2.3l-1.4-4.3c-0.6-1.8,0.3-3.8,2.2-4.4c1.8-0.6,3.8,0.3,4.4,2.2L31.2,10.6z M29.2,26.6l6.6-2.3l-2.3-7.1l-6.6,2.3L29.2,26.6z M32.6,36.8c0.5,1.4,1.9,2.4,3.3,2.4c0.4,0,0.8-0.1,1.1-0.2c1.8-0.6,2.8-2.6,2.2-4.4L38,31l-6.6,2.3L32.6,36.8z" />
+      <path fill="#00BFA5" d="M17.2,15.5l-6.6,2.3l-1.4-4.2c-0.6-1.8,0.3-3.8,2.2-4.4c1.8-0.6,3.8,0.3,4.4,2.2L17.2,15.5z M18.6,41.8c0.5,1.4,1.9,2.4,3.3,2.4c0.4,0,0.8-0.1,1.1-0.2c1.8-0.6,2.8-2.6,2.2-4.4l-1.2-3.7l-6.6,2.3L18.6,41.8z M19.4,22.2l-6.6,2.3l2.3,7.1l6.6-2.3L19.4,22.2z" />
+      <path fill="#00BCD4" d="M33.4,17.3l-2.2-6.6l4.1-1.4c1.8-0.6,3.8,0.3,4.4,2.2c0.6,1.8-0.3,3.8-2.2,4.4L33.4,17.3z M26.8,19.6l-2.2-6.6l-7.4,2.6l2.2,6.6L26.8,19.6z M6.4,19.3c-1.8,0.6-2.8,2.6-2.2,4.4c0.5,1.5,1.9,2.4,3.3,2.4c0.4,0,0.8-0.1,1.1-0.2l4.1-1.4l-2.2-6.6L6.4,19.3z" />
+      <path fill="#E91E63" d="M15.1,31.5l2.2,6.6l-4.7,1.6c-0.4,0.1-0.8,0.2-1.1,0.2c-1.5,0-2.8-0.9-3.3-2.4c-0.6-1.8,0.3-3.8,2.2-4.4L15.1,31.5z M43.7,25.3c-0.6-1.8-2.6-2.8-4.4-2.2l-3.5,1.2L38,31l3.6-1.2C43.4,29.1,44.4,27.1,43.7,25.3z M21.7,29.2l2.2,6.6l7.4-2.6l-2.2-6.6L21.7,29.2z" />
+      <path fill="#388E3C" d="M33.4 17.3L31.2 10.6 24.6 12.9 26.8 19.6z" />
+      <path fill="#00897B" d="M17.2 15.5L10.6 17.8 12.8 24.5 19.4 22.2z" />
+      <path fill="#BF360C" d="M29.2 26.6L31.4 33.3 38 31 35.8 24.3z" />
+      <path fill="#4E342E" d="M15.1 31.5L17.3 38.2 23.9 35.9 21.7 29.2z" />
     </svg>
   ),
   discord: () => (
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-      <path fill="#8c9eff" d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"></path>
+    <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#8c9eff" d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z" />
     </svg>
   ),
   calendar: () => (
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-      <rect width="22" height="22" x="13" y="13" fill="#fff"></rect><polygon fill="#1e88e5" points="25.68,20.92 26.688,22.36 28.272,21.208 28.272,29.56 30,29.56 30,18.616 28.56,18.616"></polygon><path fill="#1e88e5" d="M22.943,23.745c0.625-0.574,1.013-1.37,1.013-2.249c0-1.747-1.533-3.168-3.417-3.168 c-1.602,0-2.972,1.009-3.33,2.453l1.657,0.421c0.165-0.664,0.868-1.146,1.673-1.146c0.942,0,1.709,0.646,1.709,1.44 c0,0.794-0.767,1.44-1.709,1.44h-0.997v1.728h0.997c1.081,0,1.993,0.751,1.993,1.64c0,0.904-0.866,1.64-1.931,1.64 c-0.962,0-1.784-0.61-1.914-1.418L17,26.802c0.262,1.636,1.81,2.87,3.6,2.87c2.007,0,3.64-1.511,3.64-3.368 C24.24,25.281,23.736,24.363,22.943,23.745z"></path><polygon fill="#fbc02d" points="34,42 14,42 13,38 14,34 34,34 35,38"></polygon><polygon fill="#4caf50" points="38,35 42,34 42,14 38,13 34,14 34,34"></polygon><path fill="#1e88e5" d="M34,14l1-4l-1-4H9C7.343,6,6,7.343,6,9v25l4,1l4-1V14H34z"></path><polygon fill="#e53935" points="34,34 34,42 42,34"></polygon><path fill="#1565c0" d="M39,6h-5v8h8V9C42,7.343,40.657,6,39,6z"></path><path fill="#1565c0" d="M9,42h5v-8H6v5C6,40.657,7.343,42,9,42z"></path>
+    <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <rect width="22" height="22" x="13" y="13" fill="#fff" />
+      <polygon fill="#1e88e5" points="25.68,20.92 26.688,22.36 28.272,21.208 28.272,29.56 30,29.56 30,18.616 28.56,18.616" />
+      <path fill="#1e88e5" d="M22.943,23.745c0.625-0.574,1.013-1.37,1.013-2.249c0-1.747-1.533-3.168-3.417-3.168 c-1.602,0-2.972,1.009-3.33,2.453l1.657,0.421c0.165-0.664,0.868-1.146,1.673-1.146c0.942,0,1.709,0.646,1.709,1.44 c0,0.794-0.767,1.44-1.709,1.44h-0.997v1.728h0.997c1.081,0,1.993,0.751,1.993,1.64c0,0.904-0.866,1.64-1.931,1.64 c-0.962,0-1.784-0.61-1.914-1.418L17,26.802c0.262,1.636,1.81,2.87,3.6,2.87c2.007,0,3.64-1.511,3.64-3.368 C24.24,25.281,23.736,24.363,22.943,23.745z" />
+      <polygon fill="#fbc02d" points="34,42 14,42 13,38 14,34 34,34 35,38" />
+      <polygon fill="#4caf50" points="38,35 42,34 42,14 38,13 34,14 34,34" />
+      <path fill="#1e88e5" d="M34,14l1-4l-1-4H9C7.343,6,6,7.343,6,9v25l4,1l4-1V14H34z" />
+      <polygon fill="#e53935" points="34,34 34,42 42,34" />
+      <path fill="#1565c0" d="M39,6h-5v8h8V9C42,7.343,40.657,6,39,6z" />
+      <path fill="#1565c0" d="M9,42h5v-8H6v5C6,40.657,7.343,42,9,42z" />
     </svg>
   ),
 };
@@ -111,121 +138,126 @@ const AutomationSection = () => {
   const div10Ref = useRef<HTMLDivElement>(null);
 
   return (
-    <section id="automation" className="py-28 relative overflow-hidden">
+    <section id="automation" className="py-16 pt-4 relative overflow-hidden bg-[#0c0c14]/40">
       <div className="container mx-auto px-6">
         <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
-          <p className="text-sm font-medium text-accent uppercase tracking-widest mb-3">AI & Automation</p>
-          <h2 className="font-display text-4xl sm:text-5xl font-bold mb-6">Automate the Work That Slows Your Growth Down</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-8 text-lg leading-relaxed">
-            We use tools like <span className="text-primary font-semibold">n8n</span>, <span className="text-primary font-semibold">AI</span>, and your existing apps to automate lead follow-up, booking, reminders, and repetitive internal workflows.
+          <p className="text-sm font-bold text-[#0669F9] uppercase tracking-widest mb-4">AI & Automation</p>
+          <h2 className="font-display text-4xl sm:text-5xl font-bold mb-6 text-white">Automate the Work That Slows Your Growth Down</h2>
+          <p className="text-white/60 max-w-2xl mx-auto mb-10 text-lg leading-relaxed">
+            We use tools like <span className="text-[#0669F9] font-semibold">n8n</span>, <span className="text-[#0669F9] font-semibold">AI</span>, and your existing apps to automate lead follow-up, booking, reminders, and repetitive internal workflows.
           </p>
           <Link to="/booking">
-            <Button size="lg" className="rounded-full px-8 shadow-lg text-md shadow-primary/20 hover:shadow-primary/30 transition-all duration-300">
+            <Button size="lg" className="rounded-full px-10 py-7 text-lg bg-gradient-to-r from-[#0669F9] to-[#359AF2] text-white shadow-2xl shadow-[#0669F9]/20 hover:shadow-[#0669F9]/40 transition-all duration-300">
               AI Automate My Operations
             </Button>
           </Link>
         </AnimatedSection>
 
-        <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
-          <div className="space-y-4 order-2 lg:order-1">
+        <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
+          <div className="space-y-5 order-2 lg:order-1">
             {[
               "Capture leads instantly and route them to the right place",
               "Send automatic follow-up messages so enquiries do not go cold",
               "Reduce manual admin and repetitive busywork",
               "Connect your tools so your team works with fewer bottlenecks",
             ].map((item) => (
-              <div key={item} className="glass-card p-5 text-muted-foreground leading-relaxed">{item}</div>
+              <div key={item} className="glass-card !p-6 text-white/90 font-medium leading-relaxed transition-all duration-300 hover:text-white group relative overflow-hidden flex items-center gap-5">
+                <div className="glass-card-shine" />
+                <div className="w-7 h-7 rounded-full bg-[#0669F9]/20 flex items-center justify-center flex-shrink-0">
+                  <Check size={16} className="text-[#0669F9]" strokeWidth={3} />
+                </div>
+                <span className="relative z-10 text-lg">{item}</span>
+              </div>
             ))}
           </div>
 
           <div
-            className="relative flex h-[500px] md:h-[600px] w-full items-center justify-center overflow-hidden glass-card p-4 sm:p-10 bg-background order-1 lg:order-2"
+            className="relative flex h-[550px] md:h-[650px] w-full items-center justify-center overflow-hidden glass-card !p-10 bg-[#0c0c14]/20 order-1 lg:order-2"
             ref={containerRef}
           >
             <DotPattern
               className={cn(
-                "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)] md:[mask-image:radial-gradient(500px_circle_at_center,white,transparent)] lg:[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]",
-                "opacity-40"
+                "[mask-image:radial-gradient(350px_circle_at_center,white,transparent)] md:[mask-image:radial-gradient(550px_circle_at_center,white,transparent)]",
+                "opacity-30"
               )}
             />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(151,192,44,0.05)_0%,transparent_70%)] pointer-events-none" />
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 1.5, duration: 1 }}>
-              <AnimatedBeam containerRef={containerRef} fromRef={div1Ref} toRef={div4Ref} curvature={-75} endYOffset={-10} gradientStartColor="#97c02c" gradientStopColor="#97c02c" />
-              <AnimatedBeam containerRef={containerRef} fromRef={div2Ref} toRef={div4Ref} gradientStartColor="#97c02c" gradientStopColor="#97c02c" />
-              <AnimatedBeam containerRef={containerRef} fromRef={div3Ref} toRef={div4Ref} curvature={75} endYOffset={10} gradientStartColor="#97c02c" gradientStopColor="#97c02c" />
-              <AnimatedBeam containerRef={containerRef} fromRef={div8Ref} toRef={div4Ref} curvature={-45} gradientStartColor="#97c02c" gradientStopColor="#97c02c" />
-              <AnimatedBeam containerRef={containerRef} fromRef={div10Ref} toRef={div4Ref} curvature={45} gradientStartColor="#97c02c" gradientStopColor="#97c02c" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,105,249,0.08)_0%,transparent_70%)] pointer-events-none" />
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 1, duration: 1 }}>
+              <AnimatedBeam containerRef={containerRef} fromRef={div1Ref} toRef={div4Ref} curvature={-75} endYOffset={-10} gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
+              <AnimatedBeam containerRef={containerRef} fromRef={div2Ref} toRef={div4Ref} gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
+              <AnimatedBeam containerRef={containerRef} fromRef={div3Ref} toRef={div4Ref} curvature={75} endYOffset={10} gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
+              <AnimatedBeam containerRef={containerRef} fromRef={div8Ref} toRef={div4Ref} curvature={-45} gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
+              <AnimatedBeam containerRef={containerRef} fromRef={div10Ref} toRef={div4Ref} curvature={45} gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
 
-              <AnimatedBeam containerRef={containerRef} fromRef={div5Ref} toRef={div4Ref} curvature={-75} endYOffset={-10} reverse gradientStartColor="#97c02c" gradientStopColor="#97c02c" />
-              <AnimatedBeam containerRef={containerRef} fromRef={div6Ref} toRef={div4Ref} reverse gradientStartColor="#97c02c" gradientStopColor="#97c02c" />
-              <AnimatedBeam containerRef={containerRef} fromRef={div7Ref} toRef={div4Ref} curvature={75} endYOffset={10} reverse gradientStartColor="#f8fafc" gradientStopColor="#97c02c" />
-              <AnimatedBeam containerRef={containerRef} fromRef={div9Ref} toRef={div4Ref} curvature={-45} reverse gradientStartColor="#97c02c" gradientStopColor="#97c02c" />
+              <AnimatedBeam containerRef={containerRef} fromRef={div5Ref} toRef={div4Ref} curvature={-75} endYOffset={-10} reverse gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
+              <AnimatedBeam containerRef={containerRef} fromRef={div6Ref} toRef={div4Ref} reverse gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
+              <AnimatedBeam containerRef={containerRef} fromRef={div7Ref} toRef={div4Ref} curvature={75} endYOffset={10} reverse gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
+              <AnimatedBeam containerRef={containerRef} fromRef={div9Ref} toRef={div4Ref} curvature={-45} reverse gradientStartColor="#0669F9" gradientStopColor="#359AF2" />
             </motion.div>
 
             <div className="flex size-full max-w-4xl flex-col items-stretch justify-between gap-10 relative z-10">
               <div className="flex flex-row items-center justify-between">
-                <div className="flex flex-col gap-10">
-                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.5 }}>
-                    <Circle ref={div1Ref} className="glow-border-primary/30">
+                <div className="flex flex-col gap-12">
+                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}>
+                    <Circle ref={div1Ref} className="border-white/10 bg-black shadow-xl">
                       <Icons.googleDrive />
                     </Circle>
                   </motion.div>
-                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.7 }}>
-                    <Circle ref={div8Ref} className="glow-border-primary/30">
+                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.5 }}>
+                    <Circle ref={div8Ref} className="border-white/10 bg-black shadow-xl">
                       <Icons.slack />
                     </Circle>
                   </motion.div>
                 </div>
-                <div className="flex flex-col gap-10">
-                  <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.9 }}>
-                    <Circle ref={div5Ref} className="glow-border-primary/30">
+                <div className="flex flex-col gap-12">
+                  <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.7 }}>
+                    <Circle ref={div5Ref} className="border-white/10 bg-black shadow-xl">
                       <Icons.googleDocs />
                     </Circle>
                   </motion.div>
                   <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.9 }}>
-                    <Circle ref={div9Ref} className="glow-border-primary/30">
+                    <Circle ref={div9Ref} className="border-white/10 bg-black shadow-xl">
                       <Icons.discord />
                     </Circle>
                   </motion.div>
                 </div>
               </div>
               <div className="flex flex-row items-center justify-between">
-                <div className="flex flex-col gap-10">
-                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 1.2 }}>
-                    <Circle ref={div2Ref} className="glow-border-primary/30">
+                <div className="flex flex-col gap-12">
+                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
+                    <Circle ref={div2Ref} className="border-white/10 bg-black shadow-xl">
                       <Icons.notion />
                     </Circle>
                   </motion.div>
-                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 1.3 }}>
-                    <Circle ref={div10Ref} className="glow-border-primary/30">
+                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }}>
+                    <Circle ref={div10Ref} className="border-white/10 bg-black shadow-xl">
                       <Icons.calendar />
                     </Circle>
                   </motion.div>
                 </div>
-                <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0 }}>
-                  <Circle ref={div4Ref} className="size-24 border-[#ea4b71] bg-[#ea4b71] shadow-[0_0_40px_rgba(234,75,113,0.4)] border-2 z-20">
+                <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}>
+                  <Circle ref={div4Ref} className="size-28 border-[#0669F9] bg-[#0669F9] shadow-[0_0_60px_rgba(6,105,249,0.5)] border-2 z-20">
                     <div className="flex flex-col items-center gap-1">
                       <Icons.n8n />
-                      <span className="text-sm font-bold text-white tracking-tighter"></span>
                     </div>
                   </Circle>
                 </motion.div>
-                <div className="flex flex-col gap-10">
-                  <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.5 }}>
-                    <Circle ref={div6Ref} className="glow-border-primary/30">
+                <div className="flex flex-col gap-12">
+                  <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.6 }}>
+                    <Circle ref={div6Ref} className="border-white/10 bg-black shadow-xl">
                       <Icons.zapier />
                     </Circle>
                   </motion.div>
                 </div>
               </div>
               <div className="flex flex-row items-center justify-between">
-                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }}>
-                  <Circle ref={div3Ref} className="glow-border-primary/30">
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.8 }}>
+                  <Circle ref={div3Ref} className="border-white/10 bg-black shadow-xl">
                     <Icons.whatsapp />
                   </Circle>
                 </motion.div>
-                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.6 }}>
-                  <Circle ref={div7Ref} className="glow-border-primary/30">
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 1.0 }}>
+                  <Circle ref={div7Ref} className="border-white/10 bg-black shadow-xl">
                     <Icons.openai />
                   </Circle>
                 </motion.div>

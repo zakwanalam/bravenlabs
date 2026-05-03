@@ -1,88 +1,109 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import HeroBackground from "./HeroBackground";
-
-const trustItems = [
-  "Websites that convert",
-  "AI automation that saves time",
-  "Built for modern brands",
-];
+import LogoMarquee from "./LogoMarquee";
 
 const HeroSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-black text-white">
       <HeroBackground />
 
-      <div className="container relative z-10 mx-auto px-6 text-center pt-20">
+      <div className="container relative z-10 mx-auto px-6 flex-grow flex flex-col items-center justify-center text-center pt-32 pb-20">
+        {/* Top Badge */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-block mb-6 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-xs font-medium text-primary tracking-wider uppercase"
+          transition={{ duration: 0.6 }}
+          className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md"
         >
-          Websites & AI Automation for Modern Brands
+          <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+          <span className="text-sm font-medium text-primary/80">Software Agency · Est. 2024</span>
         </motion.div>
 
+        {/* Headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight max-w-6xl mx-auto"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight max-w-7xl mb-8"
         >
-          Get More Leads With Better{" "}
-          <span className="text-primary neon-text-primary">Websites & Automation</span>
+          <span className="block mb-2">Engineering Products</span>
+          <span className="bg-gradient-to-r from-[#0669F9] to-[#38bdf8] bg-clip-text text-transparent">Built to Outperform</span>
         </motion.h1>
 
+        {/* Tagline Pills */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.35 }}
+          className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10"
+        >
+          {[
+            "Built for Speed",
+            "Designed to Convert",
+            "Engineered for Growth",
+          ].map((phrase, i) => (
+            <motion.span
+              key={phrase}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 + i * 0.12 }}
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-sm font-medium text-white/70"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0669F9]" />
+              {phrase}
+            </motion.span>
+          ))}
+        </motion.div>
+
+        {/* Subheadline */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.55 }}
-          className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-lg md:text-xl text-white/60 max-w-3xl mb-12 leading-relaxed"
         >
-          Logexa Labs helps modern brands grow with conversion-focused websites, landing pages,
-          and AI-powered automation systems that reduce manual work and turn more visitors into enquiries.
+          We partner with ambitious brands to build custom web apps, SaaS platforms, and AI systems that solve complex problems and drive measurable growth.
         </motion.p>
 
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.75 }}
-          className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="flex flex-col sm:flex-row gap-6 mb-16"
         >
-          <Button variant="hero" size="lg" className="text-base px-8 py-6" onClick={() => navigate("/booking")}>
-            Book a Free Consultation <ArrowRight size={18} />
-          </Button>
-          <Button
-            variant="heroOutline"
-            size="lg"
-            className="text-base px-8 py-6"
-            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+          <Button 
+            className="bg-white text-black hover:bg-white/90 px-8 py-7 rounded-2xl text-lg font-bold flex items-center gap-2 group transition-all duration-300 hover:scale-105"
+            onClick={() => navigate("/booking")}
           >
-            See Services
-          </Button>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.95 }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm text-muted-foreground"
-        >
-          <span className="px-4 py-2 rounded-full border border-border/60 bg-background/40">Designed for modern brands</span>
-          {trustItems.map((item) => (
-            <div key={item} className="flex items-center gap-2 rounded-full border border-border/60 bg-background/30 px-4 py-2 backdrop-blur-sm">
-              <CheckCircle2 size={16} className="text-primary" />
-              <span>{item}</span>
+            Start Your Project
+            <div className="w-6 h-6 rounded-full bg-black/5 flex items-center justify-center group-hover:translate-x-1 transition-transform">
+                <ArrowRight size={16} />
             </div>
-          ))}
+          </Button>
+          <Button 
+            variant="outline" 
+            className="border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 px-8 py-7 rounded-2xl text-lg font-medium transition-all duration-300"
+            onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            View Pricing
+          </Button>
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      {/* Logo Marquee Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
+        <LogoMarquee />
+      </motion.div>
     </section>
   );
 };
