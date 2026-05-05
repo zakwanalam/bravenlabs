@@ -36,7 +36,7 @@ const HeroSection = () => {
         </motion.h1>
 
         {/* Tagline Pills */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
@@ -77,17 +77,17 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-6 mb-16"
         >
-          <Button 
+          <Button
             className="bg-white text-black hover:bg-white/90 px-8 py-7 rounded-2xl text-lg font-bold flex items-center gap-2 group transition-all duration-300 hover:scale-105"
             onClick={() => navigate("/booking")}
           >
             Start Your Project
             <div className="w-6 h-6 rounded-full bg-black/5 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                <ArrowRight size={16} />
+              <ArrowRight size={16} />
             </div>
           </Button>
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             className="border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 px-8 py-7 rounded-2xl text-lg font-medium transition-all duration-300"
             onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
           >
