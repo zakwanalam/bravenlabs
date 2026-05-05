@@ -30,10 +30,10 @@ const AboutScrollSection = () => {
       color: "white",
       stagger: 0.05,
       scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 75%",
-        end: "bottom 25%",
-        scrub: true,
+        trigger: textElement,
+        start: "top 85%",
+        end: "bottom 45%",
+        scrub: 1,
       },
     });
 

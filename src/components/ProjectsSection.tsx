@@ -141,6 +141,10 @@ const ProjectsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <div className="flex justify-center gap-4 mt-8">
+              <CarouselPrevious className="static transform-none w-12 h-12 bg-white/5 border-white/10 hover:bg-white/10 hover:text-white text-white/70" />
+              <CarouselNext className="static transform-none w-12 h-12 bg-white/5 border-white/10 hover:bg-white/10 hover:text-white text-white/70" />
+            </div>
           </Carousel>
         </div>
       </div>
